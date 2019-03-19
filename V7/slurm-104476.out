@@ -1,0 +1,7 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+
+real	0m0.071s
+user	0m0.479s
+sys	0m0.008s

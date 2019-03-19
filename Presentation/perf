@@ -1,0 +1,61 @@
+##Sur PC perso (2000 cellules)
+
+   #V4 (sans optimisation)
+   3m6,235s
+   #V4 (avec -O2)
+   0m43,627s
+   #V4 (avec -O3)
+   0m22,110s
+
+   #V6 (03, no OMP)
+   0m22,017s
+   #V6 (03, 2 threads)
+   0m18,033s
+   #V6 (03, 4 threads)
+   0m13,126s
+   #V6 (03, 6 threads)
+   0m14,689s
+   #V6 (03, 8 threads)
+   0m15,936s
+
+   #V7 (avec O3, no OMP)
+   0m22,008
+   #V7 (03, 2 threads)
+   0m13,438s
+   #V7 (03, 4 threads)
+   0m7,890s
+   #V7 (03, 6 threads)
+   0m8,938s
+   #V7 (03, 8 threads)
+   0m8,383s
+
+   #V8 (avec O3, no OMP)
+   0m43,399s
+   #V8 (O3, 2 threads)
+   0m26,047s
+   #V8 (03, 4 threads)
+   0m19,021s
+
+   #V9 (O3, no OMP)
+   0m22,305s
+   #V9 (O3, 4 threads)
+   0m7,866s
+
+   ##Comparaison V7/V10
+   #V7 (O3, no OMP, 200 cellules, toutes les itérations écrites dans le fichier)
+   0m15,055s
+   #V10 (O3, no OMP, 200 cellules, toutes les itérations écrites dans les fichiers)
+   0m14,857s
+   #V7 (O3, 2 threads, 200 cellules, toutes les itérations écrites dans le fichier)
+   0m14,854s   
+   #V10 (O3, 2 threads, 200 cellules, toutes les itérations écrites dans les fichiers)
+   0m14,857s
+   #V7 (O3, 4 threads, 200 cellules, toutes les itérations écrites dans le fichier)
+   0m15,432s
+   #V10 (O3, 4 threads, 200 cellules, toutes les itérations écrites dans les fichiers)
+   0m13,652s
+   #V7 (O3, 8 threads, 200 cellules, toutes les itérations écrites dans le fichier)
+   0m21,746s
+   #V10 (O3, 8 threads, 200 cellules, toutes les itérations écrites dans les fichiers)
+   0m18,870s
+                        

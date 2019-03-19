@@ -1,0 +1,10 @@
+Version  Commentaire
+
+   2     Première version scalaire fonctionnelle. Stocke dans deux variables les valeurs du tableau des vitesses à la position x et x-1 pour pouvoir les reutiliser pour le prochain calcul.
+   4     Version scalaire debuguée prête à être parallélisée. Plus de variables temporaires mais deux tableaux de vitesse mis à jour successivement à chaque nouveau pas de temps.
+   5     Première version parallélisée. Problème d'écriture dans le fichier à cause de SINGLE (chaque thread écrit dans le fichier au lieu du master.
+   6     Première version parallélisée fonctionnelle. La zone parallèle est ouverte et fermée à chaque nouvelle itération temporelle.
+   7     Pareil que la version précédente mais j'utilise un master au lieu d'ouvrir et fermer la zone parallèle à chaque fois.
+   8     Version test en rejoignant les deux tableaux ensemble. Performances deux fois plus faibles pour des résultats faux à 4 threads (justes à 1 et 2).
+   9     Version test comme V7 avec l'écriture dans le programme principal (pas de fonction). Même performances que V7.
+   10    Chaque thread écrit un bout du tableau des vitesses dans des fichiers différents en même temps.      

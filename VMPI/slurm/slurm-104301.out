@@ -1,0 +1,4 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+slurmd[noeud005]: error: *** JOB 104301 CANCELLED AT 2019-01-10T13:43:13 ***

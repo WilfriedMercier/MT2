@@ -1,0 +1,19 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+ After           1
+ Almost finished           1
+ After           2
+ Almost finished           2
+ Almost           1
+ After           0
+ Almost finished           0
+ Almost           0
+slurmd[noeud016]: error: *** JOB 104820 CANCELLED AT 2019-01-11T13:24:20 ***
+mpirun: killing job...
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 4553 on node noeud016 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+

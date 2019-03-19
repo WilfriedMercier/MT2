@@ -1,0 +1,27 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+ proc num            4 sur           24
+ proc num           11 sur           24
+ proc num            1 sur           24
+ proc num            2 sur           24
+ proc num            3 sur           24
+ proc num            5 sur           24
+ proc num            6 sur           24
+ proc num            7 sur           24
+ proc num            8 sur           24
+ proc num            9 sur           24
+ proc num           10 sur           24
+ proc num            0 sur           24
+ proc num           21 sur           24
+ proc num           19 sur           24
+ proc num           12 sur           24
+ proc num           14 sur           24
+ proc num           15 sur           24
+ proc num           16 sur           24
+ proc num           17 sur           24
+ proc num           18 sur           24
+ proc num           20 sur           24
+ proc num           22 sur           24
+ proc num           23 sur           24
+ proc num           13 sur           24

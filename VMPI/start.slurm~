@@ -1,0 +1,8 @@
+#!/bin/sh
+#SBATCH --job-name=V9_MPI
+#SBATCH --time=00:50:00
+#SBATCH --partition=short
+## Pour reserver 1 noeud
+#SBATCH --nodes=1
+
+/usr/bin/time -o burger.log mpirun --prefix ${NEC_MPI_ROOT} --bind-to-core -np 3 burger

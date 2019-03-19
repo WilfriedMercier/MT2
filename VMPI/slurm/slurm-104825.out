@@ -1,0 +1,17 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+ Before           0
+ Before           1
+ Before           2
+ After           1
+ After           2
+ Almost finished           2
+ After           0
+ Almost finished           0
+ Almost           0
+ Almost finished           1
+ Almost           1
+slurmd[noeud014]: error: *** JOB 104825 CANCELLED AT 2019-01-11T13:30:54 ***
+mpirun: killing job...
+

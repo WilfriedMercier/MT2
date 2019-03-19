@@ -1,0 +1,259 @@
+##Burger V3 (ancienne version)
+#No OMP/No MPI
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,861s
+user  0m2,857s
+sys   0m0,004s
+
+#OMP sur premiere boucle (sans DO)/No MPI
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,861s
+user  0m2,857s
+sys   0m0,004s
+
+#OMP sur premiere boucle/No MPI (8 threads) - Boucle DO DYNAMIC/GUIDED
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,878s
+user  0m3,031s
+sys   0m0,008s
+
+#OMP sur premiere boucle/No MPI (8 threads) - Boucle DO STATIC
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,872s
+user  0m3,038s
+sys   0m0,000s
+
+##Burger V3 (nouvelle version)
+#No OMP/No MPI
+NSTEPX=600 (+100 => x2 en temps d'exec.)
+TotTime=2
+   #1er test
+   real  0m11,061s
+   user  0m11,047s
+   sys   0m0,012s
+   #2eme test
+   real  0m10,992s
+   user  0m10,985s
+   sys   0m0,004s
+   #3eme test
+   real  0m10,954s
+   user  0m10,939s
+   sys   0m0,012s
+#OMP sur 1ere boucle/No MPI
+   #1er test
+   real  0m10,950s
+   user  0m11,094s
+   sys   0m0,008s
+   #2eme test (avec 8 threads + affichage qui ralentit)
+   real  0m10,964s
+   user  0m11,182s
+   sys   0m0,004s
+   #3eme test (8 threads sans affichage)
+   real  0m10,960s
+   user  0m11,114s
+   sys   0m0,008s
+   #4eme test (8 threads sans affichage)
+    real 0m10,977s
+    user 0m11,093s
+    sys  0m0,020s  
+
+##Burger V3 (sur noeud 12 threads)
+#NO OMP/No MPI
+   #1er test (4 threads)
+   NSTEPX=600 
+   TotTime=2
+   real  0m9.544s
+   user  0m9.530s
+   sys   0m0.009s
+   #2eme test (4 threads)
+   NSTEPX=1000
+   TotTime=2
+   real  0m43.710s
+   user  0m43.673s
+   sys   0m0.025s
+                                    
+#OMP sur premiere boucle/No MPI
+   #1er test (avec ifortran)
+   real  0m11.942s
+   user  0m13.758s
+   sys   0m0.321s
+   #2eme test (avec gfortran)
+   real  0m9.572s
+   user  0m10.591s
+   sys   0m0.011s   
+#No OMP/No MPI
+   #1er test (gfortran)
+   real  0m9.550s
+   user  0m9.524s
+   sys   0m0.006s
+   #2eme test (ifortran)
+   real  0m10.890s
+   user  0m10.510s
+   sys   0m0.361s
+
+##Burger V3 (sur noeud 4 threads)
+#OMP sur premier boucle/No MPI
+   #1er test (gfortran)
+   real  0m9.563s
+   user  0m9.761s
+   sys   0m0.008s
+
+##Burger V4 (sur PC - 8 threads)
+#OMP sur premiere boucle et boucle spatiale (double tableau vit)
+   real  0m2,317s
+   user  0m8,858s
+   sys   0m2,060s
+
+##Burger V4 (noeud)
+#No OMP/No MPI
+   #1er test
+   NSTEPX=4000
+   TotTime=2
+   real  6m5.817s
+   user  22m24.641s
+   sys   0m16.506s
+   #2eme test
+   NSTEPX=2000
+   TotTime=1
+   real  2m33.846s
+   user  2m33.826s
+   sys   0m0.005s
+   #3eme test
+   NSTEPX=200
+   TotTime=1
+   real  0m0.175s
+   user  0m0.161s
+   sys   0m0.004s
+   
+#OMP sur premiere boucle et boucle spatiale (double tableau vit)
+   #1er test (4 threads - parallelisation STATIC)
+   NSTEPX=600
+   TotTime=2
+   real  0m2.838s
+   user  0m7.975s
+   sys   0m0.638s
+   #2eme test (8 threads - identique)   
+   NSTEPX=600                              
+   TotTime=2
+   real  0m3.729s
+   user  0m15.072s
+   sys   0m1.426s
+   #3eme test (12 threads - identique)
+   NSTEPX=600
+   TotTime=2
+   real  0m5.282s
+   user  0m26.592s
+   sys   0m1.250s
+   #4eme test (4 threads - identique)
+   NSTEPX=1000                              
+   TotTime=2
+   real  0m15.058s
+   user  1m14.390s
+   sys   0m3.393s
+   #5eme test (4 threads - parallelisation DYNAMIC - resultats faux)
+   NSTEPX=1000
+   TotTime=2
+   real  1m59.341s
+   user  22m3.158s
+   sys   0m3.715s
+   #6eme (4 threads - parallelisation STATIC)
+   NSTEPX=1000
+   TotTime=1
+   real  0m7.360s
+   user  0m35.557s
+   sys   0m1.749s
+   #7eme test (4 threads - identique)
+   NSTEPX=4000
+   TotTime=1
+   real  6m5.280s
+   user  22m54.761s
+   sys   0m17.388s
+   #8eme test (4 threads - identique - 10 sorties au lieu de 400)
+   NSTEPX=2000
+   TotTime=1
+   real  0m42.326s
+   user  2m48.078s
+   sys   0m0.446s
+
+##Burger V5 (noeud)
+#No OMP/No MPI
+   #1er test (identique a V4)
+
+#OMP sur boucles spatiales
+   #1er test (resultats en partie faux (courbes non bijectives))
+   NSTEPX=2000
+   TotTime=1
+   real  0m41.016s
+   user  2m43.193s
+   sys   0m0.238s
+
+##Burger V6 (noeud)
+#No OMP/No MPI
+   #1er test (identique a V4)
+
+#OMP sur boucles spatiales + corrections bug ecriture (avec parallel inside)
+   #1er test (4 threads)
+   NSTEPX=2000
+   TotTime=1
+   real  0m47.868s
+   user  3m10.199s
+   sys   0m1.230s
+
+##Burger V7 (noeud)
+#No OMP/No MPI
+   #1er test (identique a V4)
+   
+#OMP sur boucles spatiales + corrections bug ecriture (avec Master)
+   #1er test (4 threads)
+   NSTEPX=2000
+   TotTime=1
+   real  0m42.061s
+   user  2m47.518s
+   sys   0m0.692s
+   SpeedUp = 3.756
+   Ratio = 91.4%
+   #2eme test (8 threads)
+   NSTEPX=2000
+   TotTime=1
+   real  0m25.589s
+   user  3m24.005s
+   sys   0m0.649s
+   SpeedUp = 6.012
+   Ratio = 75.1%
+   #3eme test (12 threads)   
+   NSTEPX=2000
+   TotTime=1
+   real  0m17.234s
+   user  3m25.814s
+   sys   0m0.810s
+   SpeedUp = 8.927   
+   Ratio = 74.4%
+   #4eme test (4 threads)
+   NSTEPX=200
+   TotTime=1
+   real  0m0.086s
+   user  0m0.309s
+   sys   0m0.007s
+   SpeedUp = 2.035
+   Ratio = 50.9%%
+   #5eme test (4 threads - premiere boucle non parallelisee)
+   NSTEPX=200 
+   TotTime=1 
+   real  0m0.079s
+   user  0m0.277s
+   sys   0m0.009s
+   SpeedUp = 2.215
+   Ratio = 55.37%
+   #5eme test (4 threads - premiere boucle non parallelisee)
+   NSTEPX=200 
+   TotTime=1
+   real  0m0.071s
+   user  0m0.479s
+   sys   0m0.008s
+   SpeedUp = 2.465
+   Ratio = 30.8%
+

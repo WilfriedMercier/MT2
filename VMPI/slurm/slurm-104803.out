@@ -1,0 +1,40 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+[noeud013:02718] *** Process received signal ***
+[noeud013:02718] Signal: Bus error (7)
+[noeud013:02718] Signal code:  (128)
+[noeud013:02718] Failing at address: (nil)
+[noeud013:02719] *** Process received signal ***
+[noeud013:02719] Signal: Bus error (7)
+[noeud013:02719] Signal code:  (128)
+[noeud013:02719] Failing at address: (nil)
+ retest
+ Alm           2
+[noeud013:02719] [ 0] /lib64/libpthread.so.0 [0x2ac1a6d61b10]
+[noeud013:02719] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2ac1a6272e82]
+[noeud013:02719] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2ac1a6271785]
+[noeud013:02719] [ 3] /lib64/libc.so.6(ttyname+0x125) [0x2ac1a7035635]
+[noeud013:02719] [ 4] burger(for__open_proc+0x283c) [0x4376dc]
+[noeud013:02719] [ 5] burger(for__open_default+0x2be) [0x4186be]
+[noeud013:02719] [ 6] burger(for_write_seq_lis+0x1d85) [0x428bf5]
+[noeud013:02719] [ 7] burger(MAIN__+0x439) [0x407c69]
+[noeud013:02719] [ 8] burger(main+0x3c) [0x40781c]
+[noeud013:02719] [ 9] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2ac1a6f8b994]
+[noeud013:02719] [10] burger [0x407729]
+[noeud013:02719] *** End of error message ***
+[noeud013:02718] [ 0] /lib64/libpthread.so.0 [0x2b2d845fbb10]
+[noeud013:02718] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2b2d83b0ce82]
+[noeud013:02718] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2b2d83b0b785]
+[noeud013:02718] [ 3] /lib64/libc.so.6(ttyname+0x125) [0x2b2d848cf635]
+[noeud013:02718] [ 4] burger(for__open_proc+0x283c) [0x4376dc]
+[noeud013:02718] [ 5] burger(for__open_default+0x2be) [0x4186be]
+[noeud013:02718] [ 6] burger(for_write_seq_lis+0x1d85) [0x428bf5]
+[noeud013:02718] [ 7] burger(MAIN__+0x439) [0x407c69]
+[noeud013:02718] [ 8] burger(main+0x3c) [0x40781c]
+[noeud013:02718] [ 9] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b2d84825994]
+[noeud013:02718] [10] burger [0x407729]
+[noeud013:02718] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 2719 on node noeud013 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------

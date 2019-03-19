@@ -1,0 +1,39 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+ ehoh
+ ehoh
+ ehoh
+ ehoh
+ echo
+ echo
+ echo
+ echo
+ coucou
+ coucou
+ coucou
+ test
+ retest
+ test
+ retest
+ test
+ retest
+ coucou
+[noeud018:01373] *** Process received signal ***
+[noeud018:01373] Signal: Bus error (7)
+[noeud018:01373] Signal code:  (128)
+[noeud018:01373] Failing at address: (nil)
+[noeud018:01373] [ 0] /lib64/libpthread.so.0 [0x2b9527113b10]
+[noeud018:01373] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2b9526624e82]
+[noeud018:01373] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2b9526623785]
+[noeud018:01373] [ 3] burger(for__get_vm+0x23) [0x41dc33]
+[noeud018:01373] [ 4] burger(for__acquire_lun+0x5df) [0x411b2f]
+[noeud018:01373] [ 5] burger(for_open+0x4c0) [0x414a20]
+[noeud018:01373] [ 6] burger(MAIN__+0x81a) [0x40811a]
+[noeud018:01373] [ 7] burger(main+0x3c) [0x4078ec]
+[noeud018:01373] [ 8] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b952733d994]
+[noeud018:01373] [ 9] burger [0x4077f9]
+[noeud018:01373] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 1373 on node noeud018 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------

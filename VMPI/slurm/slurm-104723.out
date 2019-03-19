@@ -1,0 +1,66 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+ ehoh
+ ehoh
+ ehoh
+ ehoh
+ echo
+ echo
+ echo
+ echo
+ coucou
+ test
+ coucou
+ coucou
+ test
+ test
+ coucou
+[noeud018:01245] *** Process received signal ***
+[noeud018:01246] *** Process received signal ***
+[noeud018:01246] Signal: Bus error (7)
+[noeud018:01246] Signal code:  (128)
+[noeud018:01246] Failing at address: (nil)
+[noeud018:01245] Signal: Bus error (7)
+[noeud018:01245] Signal code:  (128)
+[noeud018:01245] Failing at address: (nil)
+[noeud018:01244] *** Process received signal ***
+[noeud018:01244] Signal: Bus error (7)
+[noeud018:01244] Signal code:  (128)
+[noeud018:01244] Failing at address: (nil)
+[noeud018:01244] [ 0] /lib64/libpthread.so.0 [0x2b4991ff1b10]
+[noeud018:01244] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2b4991502e82]
+[noeud018:01246] [ 0] /lib64/libpthread.so.0 [0x2b51763f2b10]
+[noeud018:01246] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2b5175903e82]
+[noeud018:01246] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2b5175902785]
+[noeud018:01246] [ 3] burger(for__get_vm+0x23) [0x41dd03]
+[noeud018:01245] [ 0] /lib64/libpthread.so.0 [0x2af7613c6b10]
+[noeud018:01245] [ 1] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0(opal_memory_ptmalloc2_int_malloc+0x802) [0x2af7608d7e82]
+[noeud018:01245] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2af7608d6785]
+[noeud018:01246] [ 4] burger(for__acquire_lun+0x5df) [0x411bff]
+[noeud018:01246] [ 5] burger(for_write_seq_fmt+0x88) [0x425ca8]
+[noeud018:01246] [ 6] burger(MAIN__+0x8cb) [0x4081cb]
+[noeud018:01246] [ 7] burger(main+0x3c) [0x4078ec]
+[noeud018:01246] [ 8] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b517661c994]
+[noeud018:01246] [ 9] burger [0x4077f9]
+[noeud018:01246] *** End of error message ***
+[noeud018:01244] [ 2] /opt/openmpi/1.4.3-icc/lib/libopen-pal.so.0 [0x2b4991501785]
+[noeud018:01244] [ 3] burger(for__get_vm+0x23) [0x41dd03]
+[noeud018:01245] [ 3] burger(for__get_vm+0x23) [0x41dd03]
+[noeud018:01245] [ 4] burger(for__acquire_lun+0x5df) [0x411bff]
+[noeud018:01245] [ 5] burger(for_write_seq_fmt+0x88) [0x425ca8]
+[noeud018:01245] [ 6] burger(MAIN__+0x8cb) [0x4081cb]
+[noeud018:01245] [ 7] burger(main+0x3c) [0x4078ec]
+[noeud018:01245] [ 8] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2af7615f0994]
+[noeud018:01245] [ 9] burger [0x4077f9]
+[noeud018:01245] *** End of error message ***
+[noeud018:01244] [ 4] burger(for__acquire_lun+0x5df) [0x411bff]
+[noeud018:01244] [ 5] burger(for_open+0x4c0) [0x414af0]
+[noeud018:01244] [ 6] burger(MAIN__+0x826) [0x408126]
+[noeud018:01244] [ 7] burger(main+0x3c) [0x4078ec]
+[noeud018:01244] [ 8] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b499221b994]
+[noeud018:01244] [ 9] burger [0x4077f9]
+[noeud018:01244] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 1246 on node noeud018 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------

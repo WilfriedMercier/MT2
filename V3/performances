@@ -1,0 +1,62 @@
+##Burger V3 (ancienne version)
+#No OMP/No MPI
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,861s
+user  0m2,857s
+sys   0m0,004s
+
+#OMP sur premiere boucle (sans DO)/No MPI
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,861s
+user  0m2,857s
+sys   0m0,004s
+
+#OMP sur premiere boucle/No MPI (8 threads) - Boucle DO DYNAMIC/GUIDED
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,878s
+user  0m3,031s
+sys   0m0,008s
+
+#OMP sur premiere boucle/No MPI (8 threads) - Boucle DO STATIC
+NSTEPX=10000
+NSTEPT=10000
+real  0m2,872s
+user  0m3,038s
+sys   0m0,000s
+
+##Burger V3 (nouvelle version)
+#No OMP/No MPI
+NSTEPX=600 (+100 => x2 en temps d'exec.)
+TotTime=2
+   #1er test
+   real  0m11,061s
+   user  0m11,047s
+   sys   0m0,012s
+   #2eme test
+   real  0m10,992s
+   user  0m10,985s
+   sys   0m0,004s
+   #3eme test
+   real  0m10,954s
+   user  0m10,939s
+   sys   0m0,012s
+#OMP sur 1ere boucle/No MPI
+   #1er test
+   real  0m10,950s
+   user  0m11,094s
+   sys   0m0,008s
+   #2eme test (avec 8 threads + affichage qui ralentit)
+   real  0m10,964s
+   user  0m11,182s
+   sys   0m0,004s
+   #3eme test (8 threads sans affichage)
+   real  0m10,960s
+   user  0m11,114s
+   sys   0m0,008s
+   #4eme test (8 threads sans affichage)
+    real 0m10,977s
+    user 0m11,093s
+    sys  0m0,020s  

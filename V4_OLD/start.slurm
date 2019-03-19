@@ -1,0 +1,9 @@
+#!/bin/sh
+#SBATCH --job-name=V4
+#SBATCH --time=00:50:00
+#SBATCH --partition=short
+## Pour reserver 1 noeud
+#SBATCH --nodes=1
+
+export OMP_NUM_THREADS=12
+time ./a.out
